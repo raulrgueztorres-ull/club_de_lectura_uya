@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+    <head>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/alquiler.js"></script>    
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+        <link type="text/css" rel="stylesheet" href="css/about.css"  media="screen,projection"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="viewport" content="width=device-width, initial-scale=0.7">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body onload="admin_account()">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo"><img src="https://res.cloudinary.com/dtrk8j2x1/image/upload/v1558525339/uya_web/essential_images/logo_lectura_faamj1.png" alt="Logo Club de Lectura"/></a>
+                <a href="#" data-activates="slide-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="books.html">Libros</a></li>
+                    <li><a href="debates.html">Debates</a></li>
+                    <li><a href="alquiler.html">Alquiler</a></li>
+                    <li><a href="login.html">Identificación</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <ul class="side-nav" id="slide-nav">
+            <li><a href="books.html" tabindex="-1">Libros</a></li>
+            <li><a href="debates.html" tabindex="-1">Debates</a></li>
+            <li><a href="alquiler.html" tabindex="-1">Alquiler</a></li>
+            <li><a href="login.html" tabindex="-1">Identificación</a></li>
+        </ul>
+        
+        <div class="about_section">
+            <div class="wrapper">
+                <section>
+                    <div class="quienes_somos">
+                        <input type="submit" class="quienes_somos_show" value="¿Quiénes somos?" id="button_about"/>
+                        <input type="submit" class="quienes_somos_hide" value="¿Quiénes somos?" id="button_about">
+                        <div class="ease"></div>
+
+                        <div class="quienes_somos_text" tabindex="0">
+
+                            Somos una empresa destinada al servicio de los amantes de la lectura cuyo propósito es proporcionar la mejor experiencia al usuario lector, y cumplir con sus espectativas, de manera que sienta total confort al utilizar nuestros recursos.
+
+                        </div>                        
+
+                    </div>
+                </section>
+            </div>
+
+            <div class="wrapper">
+                <section>
+                    <div class="ayuda_contacto">
+                        <input type="submit" class="ayuda_contacto_show" value="¿Necesitas algún tipo de soporte?" id="button_about"/>
+                        <input type="submit" class="ayuda_contacto_hide" value="¿Necesitas algún tipo de soporte?" id="button_about">
+                        <div class="ease"></div>
+
+                        <div class="ayuda_contacto_text" tabindex="0">
+
+                            <p>Correo electrónico: <a href="mailto:info@clubdelectura.com">info@clubdelectura.com</a></p>
+                            <p>Teléfono: +34 922 40 58 34</p>
+
+                        </div>  
+                    </div>
+                </section>
+            </div>
+
+            <div class="wrapper">
+                <section>
+                    <div class="trabajar_club">                      
+                        <input type="submit" class="trabajar_club_show" value="¿Deseas trabajar con nosotros?" id="button_about"/>
+                        <input type="submit" class="trabajar_club_hide" value="¿Deseas trabajar con nosotros" id="button_about">
+                        <div class="ease"></div>
+
+                        <div class="trabajar_club_text" tabindex="0">
+
+                            <p>Envíanos tu CV a la siguiente dirección: <a href="mailto:info@clubdelectura.com">info@clubdelectura.com</a></p>
+                            <p>Te responderemos con la mayor brevedad posible</p>
+
+                        </div>  
+
+                    </div>
+                </section>
+            </div>
+
+            <div class="wrapper">
+                <section>
+                    <div class="preguntas_frecuentes" tabindex="0">
+                        <input type="submit" value="Preguntas frecuentes" id="button_about"/>
+                        <div class="ease"></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+        <footer id="myfooter" class="page-footer">
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2019 Copyright
+                    <a class="grey-text text-lighten-4 right" href="about.html">About</a>
+                </div>
+            </div>
+        </footer>
+
+        <script type="text/javascript" src="js/about.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script>
+            <!-- this part is important! -->
+                $(document).ready(function () {
+                $(".button-collapse").sideNav();
+            });
+        </script>
+    </body>
+</html>

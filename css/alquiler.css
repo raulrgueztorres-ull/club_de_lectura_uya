@@ -1,0 +1,352 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}body{margin:0;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;margin:0.67em 0;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:bold;}dfn{font-style:italic;}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em;}pre{white-space:pre-wrap;}q{quotes:"\201C" "\201D" "\2018" "\2019";}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-0.5em;}sub{bottom:-0.25em;}img{border:0;}svg:not(:root){overflow:hidden;}figure{margin:0;}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em;}legend{border:0;padding:0;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,select{text-transform:none;}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;}button[disabled],html input[disabled]{cursor:default;}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}
+
+@media screen and (max-width: 1000px)
+{
+    .alquiler_container
+    {
+        display: flex;
+        flex-direction: column; 
+        margin-top: 5vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .book_rent
+    {
+        height: 80px;
+        min-width: 300px;
+        background: rgba(245,217,132,1);
+        display: inline-block;
+        position: relative;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-bottom: 3px;
+        cursor: pointer;
+    }
+    .botones_alquiler
+    {
+        margin-bottom: 15px;
+    }
+
+
+}
+
+/************* NABVAR ***********/
+
+body
+{
+    /*background-image: url(../images/libros_wallpaper.jpg);*/
+    background-image: url(https://image.cnbcfm.com/api/v1/image/104702698-GettyImages-583816330-book-club.jpg?v=1532563764);
+    background-repeat: no-repeat; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-attachment: fixed;
+
+}
+
+.decoration_box
+{
+    border-bottom: 2px red solid;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+nav
+{
+    background-color: #f4b241;
+}
+
+.brand-logo img
+{
+    padding-top: 15px;
+    margin-left: 25px;
+    width: 200px;  
+}
+
+/************* ALQUILER CONTAINER ***********/
+
+.botones_alquiler
+{
+    background-color: blue;
+    width: 450px;
+    min-width: 340px;
+    height: 200px;
+    background: rgba(241,216,178,0.5);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 15px;
+}
+
+.alquiler_container
+{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    margin-top: 5vh;
+    font-family: monospace;
+    font-size: 25px;
+    justify-content: center;
+}
+
+.book_rent
+{
+    height: 80px;
+    width: 400px;
+    background: rgba(245,217,132,1);
+    display: inline-block;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+
+.book_rent:hover, .return_book:hover
+{
+    background: rgba(255,255,255,1);
+    box-shadow: 0px 5px 15px black;
+
+
+}
+
+.book_rent:after, .return_book:after
+{
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+
+
+}
+
+.book_rent:hover:after, .return_book:hover:after
+{
+    width: 55%;
+    background: orange;
+
+}
+
+.return_book
+{
+    height: 80px;
+    width: 400px;
+    background: rgba(245,217,132,1);
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.return_book:hover 
+{
+    background: rgba(255,255,255,1);
+    box-shadow: 0px 5px 15px black; 
+}
+
+.alquiler_h2
+{
+    position: relative;
+    transition:300ms;
+    color: black;
+    margin-left: 23%;
+    margin-top: 5%;
+
+}
+
+.datos_alquiler
+{
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 5px;
+    background-image: url(../images/libros_wallpaper_blur.jpg); /* Imagen con desenfoque */
+    background-attachment: fixed;
+}
+
+h5
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*************** SLIDER *****************/
+
+.slider
+{
+    height: 300px !important;
+    border-radius: 15px;
+}
+
+.slides
+{
+    height: 300px !important;
+    background-image: url(https://media.istockphoto.com/vectors/vector-empty-wooden-shelf-background-vector-id517014378?k=6&m=517014378&s=612x612&w=0&h=vXlv09dM5AB6wdKLR0Fizm5pPrTXD-1fjcAPKym3MBI=);
+    display: flex;
+    justify-content: center;
+}
+.slides img
+{
+    margin: auto;
+    height: 70%;
+    width: 40%;
+}
+
+@media (max-width: 800px)
+{
+    .slides img
+    {
+        width: 50%;
+        height: 40%;
+    }
+}
+
+
+.slider-text-1 h1
+{
+    color: white;
+    font-size: 2em;
+}
+
+.slider-color-1
+{
+    color: white;
+    font-size: 1.5em;
+}
+
+.slider-text-2 h3
+{
+    color: darkorange;  
+}
+
+.slider-color-2
+{
+    color: black;
+}
+
+.slider-text-3 h3
+{
+    color: #D48269;
+}
+
+.slider-color-3
+{
+    color: #164164;
+}
+
+.slider-text-4 h3
+{
+    color: darkorange;  
+}
+
+.slider-color-4
+{
+    color: white;
+}
+
+
+/*************** FOOTER *****************/
+
+html
+{
+    height: 100%;
+}
+
+body
+{
+   /* min-height: 100%;*/
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+#myfooter
+{
+    background-color: #f4b241;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: -100px;
+}
+
+nav
+{
+    /*background-color: #607d8b;*/
+    background-color: #f4b241;
+}
+
+.side-nav
+{
+    background-color: #f4b241;
+}
+
+.side-nav li a
+{
+    color: white;
+}
+
+.brand-logo img
+{
+    padding-top: 15px;
+    margin-left: 25px;
+    width: 200px;  
+}
+
+#box h1
+{
+    color: white;
+    font-size: 1em;
+    text-align: center;
+}
+
+.input-field
+{
+    color: white;
+}
+
+#rent_button
+{
+    background: rgba(245,217,132,1);
+}
+
+#refund_button
+{
+    background: rgba(245,217,132,1);
+}
+
+.text_rent
+{
+    margin: auto;
+    font-size: 4.5em;
+    font-family: cursive;
+    color: white;
+}
+
+
+@media (max-width: 800px)
+{
+    .text_rent
+    {
+        font-size: 1.8em;
+    }
+}
+
+#rent_error
+{
+    display: none;
+    border: 2px solid red;
+    text-align: center;
+    background: rgba(248,80,50,1);
+}
+
+
+.error-text
+{
+    font-size: 1.3em;
+    color: white;
+    font-family: sans-serif;
+}

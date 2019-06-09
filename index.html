@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140670968-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-140670968-1', {
+                'optimize_id':'GTM-W22S7BS'
+            })
+        </script>
+        <style>.async-hide { opacity: 0 !important} </style>
+
+        <script>
+
+            (function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+                                         h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+                                         (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+                                        })(window,document.documentElement,'async-hide','dataLayer',4000,
+                                           {'GTM-W22S7BS':true});
+
+        </script>
+
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+        <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="viewport" content="width=device-width, initial-scale=0.7">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body onload="carousel_script(), admin_account()">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo"><img src="https://res.cloudinary.com/dtrk8j2x1/image/upload/v1558525339/uya_web/essential_images/logo_lectura_faamj1.png" alt="Logo Club de Lectura"/></a>
+                <a href="#" data-activates="slide-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="books.html">Libros</a></li>
+                    <li><a href="debates.html">Debates</a></li>
+                    <li><a href="alquiler.html">Alquiler</a></li>
+                    <li><a href="login.html">Identificación</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <ul class="side-nav" id="slide-nav">
+            <li><a href="books.html" tabindex="-1">Libros</a></li>
+            <li><a href="debates.html" tabindex="-1">Debates</a></li>
+            <li><a href="alquiler.html" tabindex="-1">Alquiler</a></li>
+            <li><a href="login.html" tabindex="-1">Identificación</a></li>
+        </ul>
+
+        <div class="slider">
+            <ul class="slides" tabindex="0" aria-label="Slider de la página principal" role="slider">
+                <li>
+                    <img class="responsive.img" src="images/library.jpg" id="slider-img-1" aria-label="Detras de un gran libro, hay un gran separador." tabindex="0">
+                    <div class="caption center-align slider-text-1">
+                        <h1>Detrás de un gran libro</h1>
+                        <h2 class="slider-color-1">Hay un gran separador.</h2>
+                    </div>
+                </li>
+                <li>
+                    <img class="responsive.img" src="images/dialibro.jpg" id="slider-img-2" aria-label="Día del libro, 23 de abril." tabindex="0">
+                    <div class="caption left-align slider-text-2">
+                        <h1>Día del libro</h1>
+                        <h2 class="slider-color-2">23 de abril</h2>
+                    </div>
+                </li>
+                <li>
+                    <img class="responsive.img" src="images/ken_follet.jpg" id="slider-img-3" aria-label="Destacado de la semana, Ken Follet." tabindex="0">
+                    <div class="caption right-align slider-text-3">
+                        <h1>Destacado de la semana</h1>
+                        <h2 class="slider-color-3">Ken Follet.</h2>
+                    </div>
+                </li>
+                <li>
+                    <img class="responsive.img" src="images/debate.jpg" id="slider-img-4" aria-label="Salas de debates, el lugar de los lectores." tabindex="0"> 
+                    <div class="caption center-align slider-text-4">
+                        <h1>Salas de Debate</h1>
+                        <h2 class="slider-color-4">El lugar de los lectores</h2>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="scrollmenu" id="carousel_slider">
+        </div>
+
+
+
+        <div class="container" id="opinion_box">
+            <div class="row">
+                <div class="col s12 m11">
+                    <div class="card horizontal">
+                        <div class="card-image">
+                            <img class="responsive-img" id="profile" src="https://res.cloudinary.com/dtrk8j2x1/image/upload/v1559562615/uya_web/Captura_de_pantalla_2019-06-03_a_las_12.50.01_c0bjbs.png" alt="Foto del autor Stephen King" tabindex="0">
+                        </div>
+                        <div class="card-stacked" aria-label="Cuadro con la opinión de Stephen King sobre El Resplandor" tabindex="0">
+                            <div class="card-content">
+                                <p tabindex="0">El libro es una pequeña joyita, muy alejado de todo lo que recientemente está publicando el señor King. Que no es malo, pero no es igual ni de lejos. Para mí lo mejor de este libro es la narración de las escenas más truculentas; en la película la tensión la genera de forma brillante la banda sonora, pero en el libro no sé explicar qué, si son las palabras escogidas, la forma de contarlo… Desde que empezó a gustarme el género de terror he leído bastante terror, y muy frecuentemente, por lo que sentir como el corazón se acelera con un libro ya no es habitual —por desgracia, porque es una sensación magnífica— y con éste, después de bastante tiempo, he sentido cierto estrés en estas escenas que comento y, sobre todo, en las violentas. Y violentas en letras mayúsculas, negritas y subrayadas. En la película la violencia de Jack podría catalogarse perro ladrador, poco mordedor, y me explico: es cierto que los quiere matar a todos, y los persigue, y hace lo posible por matarlos, pero en el libro a Wendy la invita de forma agresiva a tomar su medicina, como él dice en el libro. </p>
+                            </div>
+                            <div class="card-action">
+                                <a href="https://www.amazon.es/s?k=El+Resplandor+Libro&__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss_2" aria-label="Enlace al libro El Resplandor De Stephen King">Enlace al libro</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m11">
+                    <div class="card horizontal">
+                        <div class="card-image">
+                            <img class="responsive.img" id="profile" src="https://res.cloudinary.com/dtrk8j2x1/image/upload/v1559562429/uya_web/Captura_de_pantalla_2019-06-03_a_las_12.46.33_ntnxin.png" alt="Foto de la autora Helena S. Paige" tabindex="0">
+                        </div>
+                        <div class="card-stacked" aria-label="Cuadro con la opinión de Helena S. Paige sobre Una Chica Asiste A Una Boda" tabindex="0">
+                            <div class="card-content">
+                                <p tabindex="0">“Una chica asiste a una boda” tiene algo más de trama que su antecesor, pasan más cosas a lo largo de ese fin de semana repleto de sorpresas pero lo cierto es que la protagonista no me ha acabado de convencer y esta vez he notado que las diferentes opciones que te daban llevaban al mismo camino, por lo que ha sido poco explotado justo lo más original de la novela. Aún así me ha gustado bastante y como sólo me ha durado una tarde pues no se me ha hecho pesado ni nada, simplemente es un buen libro para leer ahora en el verano en una tarde de calor y así relajarte.
+
+                                    La historia que me ha tocado (o que he elegido) es bastante más romántica que erótica, tiene un montón de malentendidos y momentos muy hot. Así que supongo que si me ha gustado más a pesar de sus fallos es porque ha tocado mi vena romántica con una historia bastante bonita y que merecía la pena, sino hubiera sido así seguramente el libro me habría defraudado bastante. Otra de las carencias del libro es que al ser como historias cortas pues los personajes no tiene una personalidad ni un carácter del todo definido, así que los conocemos un poco por encima sin llegar a profundizar. </p>
+                            </div>
+                            <div class="card-action">
+                                <a href="https://www.amazon.es/Una-Chica-Asiste-Boda-Sombras/dp/8415955049/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=Una+Chica+Asiste+A+Una+Boda+Libro+helena+s+paige&qid=1559562806&s=gateway&sr=8-1" aria-label="Enlace al libro Una Chica Asiste A Una Boda de Helena S. Paige">Enlace al libro</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+        </div>       
+
+
+        <footer id="myfooter" class="page-footer">
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2019 Copyright
+                    <a class="grey-text text-lighten-4 right" href="about.html">About</a>
+                </div>
+            </div>
+        </footer>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.slider').slider({
+                    indicators: false, full_width: true, interval: 4000});
+            });
+        </script>
+
+        <script>  
+            $(document).ready(function(){
+                $('.carousel').carousel();
+            });     
+        </script>
+        <script>
+            $('.slider').on('click',function(){
+                $('.slider').slider('pause');
+            });
+        </script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+        <script type="text/javascript" src="js/code.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/admin.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script>
+            <!-- this part is important! -->
+                $(document).ready(function () {
+                $(".button-collapse").sideNav();
+            });
+        </script>
+    </body>
+</html>

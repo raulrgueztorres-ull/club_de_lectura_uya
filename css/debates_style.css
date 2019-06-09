@@ -1,0 +1,354 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}body{margin:0;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;margin:0.67em 0;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:bold;}dfn{font-style:italic;}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em;}pre{white-space:pre-wrap;}q{quotes:"\201C" "\201D" "\2018" "\2019";}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-0.5em;}sub{bottom:-0.25em;}img{border:0;}svg:not(:root){overflow:hidden;}figure{margin:0;}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em;}legend{border:0;padding:0;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,select{text-transform:none;}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;}button[disabled],html input[disabled]{cursor:default;}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}
+
+@keyframes Xange
+{
+    0% 
+    {
+        background-color: aliceblue;
+
+    }
+    25%
+    {
+        background-color: lightsteelblue;
+    }
+    50%
+    {
+        background-color: lavenderblush;
+
+    }
+    75%
+    {
+        background-color: lightsteelblue;
+    }
+    100%
+    {
+        background-color: aliceblue;
+    }
+}
+
+html
+{
+    height: 100%;
+}
+
+body
+{
+    background-image: url(../images/debates.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 110%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+#myfooter
+{
+    background-color: #f4b241;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: -100px;
+}
+
+.input-field label
+{
+    color: black;
+    font-size: 1em;
+}
+
+.input-field input
+{
+    color: black;
+}
+
+nav
+{
+    background-color: #f4b241;
+}
+
+.brand-logo img
+{
+    padding-top: 15px;
+    margin-left: 25px;
+    width: 200px;  
+}
+
+.input-field input[type=text]:focus + label {
+
+    color: orange;
+}
+
+.input-field input[type=first_name]:focus + label {
+
+    color: orange;
+}
+
+.input-field input[type=email]:focus + label {
+
+    color: orange;
+}
+
+.input-field input[type=text]:focus
+{
+    border-bottom: 1px solid orange;
+    box-shadow: 0 1px 0 0 orange;
+}
+
+.input-field input[type=firstname]:focus
+{
+    border-bottom: 1px solid orange;
+    box-shadow: 0 1px 0 0 orange;
+}
+
+.input-field input[type=email]:focus
+{
+    border-bottom: 1px solid orange;
+    box-shadow: 0 1px 0 0 orange;
+}
+
+.col
+{
+    color: black;
+}
+
+/************** CONTENEDOR DE DEBATES *********************/
+
+.main_container
+{
+    /*display: flex;
+    justify-content: flex-start;*/
+    margin-top: 70px;
+}
+
+.debate-contenedor
+{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-left: 200px;
+    margin-bottom: 60px;
+}
+
+.debate-formulario
+{
+    background: rgba(255,255,255,0.2);
+    border-radius: 15px;
+    min-height: 40vh;
+}
+
+#plan-debates
+{
+    min-width: 9vw;
+    font-size: 2em;
+    border: 3px solid black;
+    margin: auto;
+    padding: 15px 8px 15px 8px;
+    color: black;
+    box-shadow: 5px 5px 120px grey;
+    text-shadow: 5px 2px 20px grey;
+
+}
+
+.decoration_box
+{
+    border-bottom: 4px #f4b241 solid;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 0.8em;
+
+}
+
+.tablon_debates
+{
+    background: rgba(255,255,255,0.2);
+    /*height: 570px;
+    width: 450px;*/
+    /*margin-left: 100px;*/
+    margin: auto;
+    height: 500px;
+    border: 5px solid orange;
+    font-family: monospace;
+    /*margin-bottom: 60px;*/
+    overflow: scroll;
+    margin-top: 8%;
+    margin-bottom: 100px;
+}
+
+/***************** DEBATES_N  ***************************/
+
+.debate_1
+{
+    background-color: white;
+    height: 77px;
+    width: 420px;
+    margin: 10px 10px 0px 10px;
+    animation: Xange 15s infinite;
+    border-bottom: 2px #f4b241 solid;
+}
+
+#debate_2
+{
+    background-color: whitesmoke;
+    height: 77px;
+    width: 420px;
+    margin: 0px 10px 0px 10px;
+    animation: Xange 18s infinite;
+}
+
+#debate_3
+{
+    background-color: white;
+    height: 77px;
+    width: 420px;
+    margin: 0px 10px 0px 10px;
+    animation: Xange 25s infinite;
+}
+
+#debate_4
+{
+    background-color: floralwhite;
+    height: 77px;
+    width: 420px;
+    margin: 0px 10px 0px 10px;
+    animation: Xange 13s infinite;
+}
+
+#debate_5
+{
+    background-color: white;
+    height: 77px;
+    width: 420px;
+    margin: 0px 10px 0px 10px;
+    animation: Xange 20s infinite;
+}
+
+#debate_6
+{
+    background-color: ghostwhite;
+    height: 77px;
+    width: 420px;
+    margin: 0px 10px 0px 10px;
+    animation: Xange 30s infinite;
+}
+
+#debate_7
+{
+    background-color: white;
+    height: 77px;
+    width: 420px;
+    margin: 0px 10px 0px 10px;
+    animation: Xange 15s infinite;
+}
+
+#debate_1_text
+{
+    color: black;
+
+}
+
+
+
+
+/***************** DATEPICKER ***************************/
+
+.datepicker-date-display 
+{ 
+    background-color: #f4b241;
+}
+
+.dropdown-content li>a, .dropdown-content li>span /* span (salas) */
+{
+    color: #f4b241; 
+}
+
+.datepicker-table td.is-selected
+{
+    background-color: #f4b241;
+}
+
+.datepicker-table td.is-today
+{
+    color: coral;
+}
+
+/***************** TIMEPICKER ***************************/
+
+
+.timepicker-digital-display 
+{ 
+    background-color: #f4b241;
+}
+
+.timepicker-tick
+{
+    color: #f4b241;
+}
+
+
+
+
+nav
+{
+    /*background-color: #607d8b;*/
+    background-color: #f4b241;
+}
+
+.side-nav
+{
+    background-color: #f4b241;
+}
+
+.side-nav li a
+{
+    color: white;
+}
+
+.brand-logo img
+{
+    padding-top: 15px;
+    margin-left: 25px;
+    width: 200px;  
+}
+
+
+.button {
+    display: inline-block;
+    padding: 1.2em 5em;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 3px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    border: none; 
+    font-size: 12px;
+    text-align: center;
+}
+
+.button:hover {
+    box-shadow: 1px 6px 15px rgba(0,0,0,0.5);
+}
+
+#debates_error
+{
+    display: none;
+    border: 2px solid red;
+    text-align: center;
+    background: rgba(248,80,50,1);
+}
+
+
+.error-text
+{
+    font-size: 1.3em;
+    color: white;
+    font-family: sans-serif;
+}
